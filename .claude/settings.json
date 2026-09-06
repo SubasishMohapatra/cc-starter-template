@@ -1,0 +1,23 @@
+{
+  "models": {
+    "default": "claude-sonnet-5"
+  },
+  "permissions": {
+    "allow": [
+      "read:*"
+    ],
+    "edit": {
+      "allow": [
+        "src/**"
+      ]
+    },
+    "deny": [
+      "bash:rm -rf*",
+      "read:.env",
+      "read:secrets/**"
+    ],
+    "approve_on": [
+      "fetch"
+    ]
+  }
+}
